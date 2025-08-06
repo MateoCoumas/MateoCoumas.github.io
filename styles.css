@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #cec6c6;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+body {
+    background-color: #e4dfdf;
+    color: #473a3a;
+}
+
+main{
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main > div{
+    background-color: #cec6c6;
+    padding: 1.5rem;
+    margin: 3rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav{
+    margin-top: 1rem;
+}
+
+ul{
+    margin-top: 0.5rem;
+    list-style: none;
+    display: flex;
+    column-gap: 1.2rem;
+    justify-content: center;
+
+}
+
+a {
+    color: #533939;
+}
+
+h1 {
+margin: 0.5rem 0;
+}
+
+#sobre_mi p{
+    margin: 1.5rem 1rem;
+}
+
+form {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+form input{
+    min-height: 3rem;
+    padding: 0.5rem;
+    border: 1px solid #473a3a;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+} 
+
+#mensaje {
+    min-height: 5rem;
+    padding: 0.5rem;
+    border: 1px solid #473a3a;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+form button {
+    margin-top: 1.5rem;
+    background-color: #533939;
+    color: #cec6c6;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #473a3a;
+}
+
+#contenedor_imagenes{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.image-container {
+    border: #473a3a solid;
+    position: relative;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    flex-direction: column;
+    color: #e4dfdf;
+    text-align: center;
+}
+
+.image-container .overlay a{
+    padding: 0.6rem 1.4rem;
+    border: 2px #cec6c6 solid;
+    background-color: rgba(255, 255, 255, 0);
+    color: #e4dfdf;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image-container .overlay p{
+    margin-bottom: 3rem;
+}
+
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+    background-color: rgba(63, 50, 50, 0.9);
+    opacity: 1;
+}

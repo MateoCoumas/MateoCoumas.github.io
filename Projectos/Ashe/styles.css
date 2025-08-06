@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(28, 36, 63, 0.945);
+}
+
+header {
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    color: white;
+    padding-top: 30px;
+}
+
+header img {
+    border-radius: 12px;
+    border: 3px rgba(236, 177, 15, 0.829) solid;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.28)
+}
+
+main{
+    max-width: 600px;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+ul, .historia {
+    color: rgb(223, 223, 223);
+    background-color: #171c2e91;
+    border-radius: 12px;
+    border: 3px rgba(236, 177, 15, 0.829) solid;
+    padding: 20px 40px 35px 40px;
+    line-height: 20px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.28);
+    
+}
+
+.historia {
+    padding: 20px 40px;
+    margin-top: 0px;
+}
+
+.habilidad {
+    display: flex;
+    align-items: flex-start; /* Alinea la imagen y el texto arriba */
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.iconoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono {
+    margin-top: 45px;
+}
+
+.descripcion {
+    max-width: 400px; /* O el ancho que prefieras */
+    margin-top: 20px;
+}
+
+h4 {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(253, 202, 108);
+}
